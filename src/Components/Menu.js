@@ -1,16 +1,31 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faFilm, faTv, faHome} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faFilm, faTv, faHome} from '@fortawesome/free-solid-svg-icons';
 import "../Styles/Menu.css";
 
 const Menu = () =>{
     return(
         <div>
             <div className="menu">
-                <FontAwesomeIcon icon={faHome}/>
-                <FontAwesomeIcon icon={faFilm}/>
-                <FontAwesomeIcon icon={faTv}/>
-                <FontAwesomeIcon icon={faSearch}/>
+                <span>
+                    <Link to="/Home" className="links">
+                        <FontAwesomeIcon icon={faHome}/>
+                    </Link>
+                </span>
+                <span>
+                    <Link to="/ToWatch" className="links">
+                        <FontAwesomeIcon icon={faFilm}/>
+                    </Link>
+                </span>
+                <span>
+                    <FontAwesomeIcon icon={faTv} className="links"/>
+                </span>
+                <span>
+                    <Link to="/Favorites" className="links">
+                        <FontAwesomeIcon icon={faHeart}/>
+                    </Link>
+                </span>
             </div>
         </div>
     )
