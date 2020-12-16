@@ -19,7 +19,7 @@ const Menu = () =>{
                     </Link>
                 </span>
                 <span>
-                    <FontAwesomeIcon icon={faTv} className="links"/>
+                    <FontAwesomeIcon icon={faTv}/>
                 </span>
                 <span>
                     <Link to="/Favorites" className="links">
