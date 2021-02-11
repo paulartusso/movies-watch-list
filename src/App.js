@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import TitleContext from "./Context/TitleContext";
 import './App.css';
 import Menu from "./Components/Menu";
-
 import {BrowserRouter} from "react-router-dom";
 import SwitchComponent from "./Components/SwitchComponent";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faFilm, faTv, faHome} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faFilm, faSearch, faHome} from '@fortawesome/free-solid-svg-icons';
 import "../Styles/Menu.css";
 
 const Menu = () =>{
@@ -9,21 +9,23 @@ const Menu = () =>{
         <div>
             <div className="menu">
                 <span>
-                    <Link to="/Home" className="links">
-                        <FontAwesomeIcon icon={faHome}/>
+                    <Link to="/Home">
+                        <FontAwesomeIcon icon={faHome} className="links"/>
                     </Link>
                 </span>
                 <span>
-                    <Link to="/ToWatch" className="links">
-                        <FontAwesomeIcon icon={faFilm}/>
+                    <Link to="/ToWatch">
+                        <FontAwesomeIcon icon={faFilm} className="links"/>
                     </Link>
                 </span>
                 <span>
-                    <FontAwesomeIcon icon={faTv}/>
+                    <Link to="/Favorites">
+                        <FontAwesomeIcon icon={faHeart} className="links"/>
+                    </Link>
                 </span>
                 <span>
-                    <Link to="/Favorites" className="links">
-                        <FontAwesomeIcon icon={faHeart}/>
+                    <Link to="/Search">
+                        <FontAwesomeIcon icon={faSearch} className="links"/>
                     </Link>
                 </span>
             </div>

@@ -8,7 +8,7 @@ const Favorites = () =>{
     const {setTitle} = useContext(TitleContext);
 
     useEffect(() => {
-        setTitle("Mis favoritos");
+        setTitle("MIS FAVORITOS");
      });
 
     return(

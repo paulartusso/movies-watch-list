@@ -8,7 +8,7 @@ const ToWatch = () =>{
     const {setTitle} = useContext(TitleContext);
 
     useEffect(() => {
-        setTitle("Para ver");
+        setTitle("PARA VER");
      });
 
     return(
