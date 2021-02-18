@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import TitleContext from "../Context/TitleContext";
+import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import "../Styles/HeaderTitle.css";
@@ -15,9 +16,11 @@ const HeaderTitle = () =>{
         plusIcon = <span></span>
     } else {
         backIcon =
-            <span>
-                <FontAwesomeIcon icon={faChevronLeft} className="links"/>
-            </span>
+            <Link to="/Home">
+                <span>
+                    <FontAwesomeIcon icon={faChevronLeft} className="links"/>
+                </span>
+            </Link>
         plusIcon =
             <span>
                 <FontAwesomeIcon icon={faPlusCircle} className="links"/>

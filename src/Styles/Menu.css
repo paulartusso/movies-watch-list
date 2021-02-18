@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     vertical-align: center;
-    background-color: #111;
+    background-color: #000a12;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -11,6 +11,6 @@
 }
 
 .links{
-    color: #ffffff;
+    color: #cfd8dc;
     font-size: 22px;
 }

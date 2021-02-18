@@ -7,7 +7,7 @@
 }
 
 input{
-    width: 85%;
+    width: 87%;
     padding: 10px;
 }
 
@@ -26,4 +26,7 @@ button{
     border: none;
     border-radius: 2px;
     margin-right: 10px;
+}
+button:hover{
+    background-color: rgb(128, 111, 15);
 }
